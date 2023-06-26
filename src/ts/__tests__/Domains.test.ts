@@ -1,6 +1,8 @@
+// ts ignore next
 import Book from "../domain/Book";
 import MusicAlbum from "../domain/MusicAlbum";
 import Movie from "../domain/Movie";
+import Phone from "../domain/Phone";
 
 test.each([
   [
@@ -20,6 +22,7 @@ test.each([
         "img.jpg",
         600
       ),
+      new Phone(11, "iPhone", "5", 2015, "img.jpg", 1000),
     ],
     [
       {
@@ -46,6 +49,14 @@ test.each([
         time: "175 мин. / 02:55",
         cover: "img.jpg",
         price: 600,
+      },
+      {
+        id: 11,
+        name: "iPhone",
+        model: "5",
+        year: 2015,
+        picture: "img.jpg",
+        price: 1000,
       },
     ],
   ],
